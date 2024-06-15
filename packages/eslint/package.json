@@ -1,0 +1,27 @@
+{
+  "name": "@repo/eslint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rushstack/eslint-config": "^3.7.0",
+    "@rushstack/eslint-patch": "^1.10.3",
+    "@tanstack/eslint-plugin-query": "^5.43.1",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "eslint-config-turbo": "^2.0.3"
+  },
+  "devDependencies": {
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react-refresh": "^0.4.7"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@repo/ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate:component": "turbo gen react-component"
+  },
+  "exports": {
+    "./header": "./src/header.tsx"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@repo/eslint": "workspace:*",
+    "@turbo/gen": "^2.0.4",
+    "@typescript-eslint/parser": "^7.13.0"
+  },
+  "dependencies": {
+    "react": "^18",
+    "typescript": "^5"
+  }
+}
