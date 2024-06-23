@@ -1,5 +1,5 @@
 {
-  "name": "@repo/ui",
+  "name": "@packages/ui",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,7 +14,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@repo/eslint": "workspace:*",
+    "@packages/eslint": "workspace:*",
+    "@packages/styles": "workspace:*",
     "@turbo/gen": "^2.0.4",
     "@typescript-eslint/parser": "^7.13.0"
   },

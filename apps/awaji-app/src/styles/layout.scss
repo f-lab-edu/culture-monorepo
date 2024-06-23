@@ -1,0 +1,14 @@
+@import "../styles/_variable";
+@import "@packages/styles/_reset";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: orange;
+  width: 100%;
+  max-width: 1024px;
+  height: 100vh;
+}
