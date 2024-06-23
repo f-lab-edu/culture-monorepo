@@ -1,5 +1,5 @@
 {
-  "extends": "@repo/ts-config/library.json",
+  "extends": "@packages/ts-config/library.json",
   "compilerOptions": {
     "outDir": "dist"
   },

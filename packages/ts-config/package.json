@@ -1,5 +1,5 @@
 {
-  "name": "@repo/ts-config",
+  "name": "@packages/ts-config",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

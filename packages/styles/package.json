@@ -1,0 +1,21 @@
+{
+  "name": "@packages/styles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "exports": {
+    "./_reset": "./common/_reset.css"
+  },
+  "files": [
+    "./common/_reset.css"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.5.1",
+    "sass": "^1.77.6"
+  }
+}
