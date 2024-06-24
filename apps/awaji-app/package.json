@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "classnames": "^2.5.1",
+    "firebase": "^10.12.2",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
@@ -17,9 +18,9 @@
   },
   "devDependencies": {
     "@packages/eslint": "workspace:*",
-    "@packages/ui": "workspace:*",
     "@packages/styles": "workspace:*",
     "@packages/ts-config": "workspace:*",
+    "@packages/ui": "workspace:*",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
