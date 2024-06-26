@@ -1,10 +1,11 @@
+import { ReactQueryProvider } from "../../utils/react-query";
 import "../styles/layout.scss";
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <html lang="en">
+    <html lang="ko-KR">
       <body>
-        <div className="container">{children} </div>
+        <ReactQueryProvider>{children}</ReactQueryProvider>
       </body>
     </html>
   );
