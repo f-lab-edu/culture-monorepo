@@ -37,6 +37,7 @@ module.exports = {
     "node_modules/",
   ],
   rules: {
+    "@typescript-eslint/explicit-function-return-type": "off",
     "react-refresh/only-export-components": [
       "warn",
       { allowConstantExport: true },
