@@ -11,11 +11,14 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@google-cloud/firestore": "^7.9.0",
+    "@next-auth/firebase-adapter": "^2.0.1",
     "@tanstack/react-query": "^5.48.0",
     "@tanstack/react-query-devtools": "^5.48.0",
     "classnames": "^2.5.1",
     "firebase": "^10.12.2",
     "next": "14.2.4",
+    "next-auth": "^4.24.7",
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.77.6"
@@ -23,6 +26,7 @@
   "devDependencies": {
     "@chromatic-com/storybook": "^1.5.0",
     "@packages/eslint": "workspace:*",
+    "@packages/prettier": "workspace:*",
     "@packages/styles": "workspace:*",
     "@packages/ts-config": "workspace:*",
     "@packages/ui": "workspace:*",
@@ -34,7 +38,6 @@
     "@storybook/nextjs": "^8.1.11",
     "@storybook/react": "^8.1.11",
     "@storybook/test": "^8.1.11",
-    "@packages/prettier": "workspace:*",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

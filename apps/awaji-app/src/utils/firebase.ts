@@ -1,9 +1,8 @@
 /* eslint-disable turbo/no-undeclared-env-vars */
 
-import { initializeApp, FirebaseApp } from "firebase/app";
-import { Firestore, getFirestore } from "firebase/firestore";
-
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { initializeApp, getApps, getApp, FirebaseApp } from 'firebase/app';
+import { Firestore, getFirestore } from 'firebase/firestore';
+import { getAuth, Auth, signInWithEmailAndPassword } from 'firebase/auth';
 
 // eslint-disable-next-line @rushstack/typedef-var
 const firebaseConfig = {
@@ -16,9 +15,18 @@ const firebaseConfig = {
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
-const app: FirebaseApp = initializeApp(firebaseConfig);
-const db: Firestore = getFirestore(app);
+let app: FirebaseApp = initializeApp(firebaseConfig);
+const firestore: Firestore = getFirestore(app);
 
+let auth: Auth;
+
+if (!getApps().length) {
+  app = initializeApp(firebaseConfig);
+  auth = getAuth(app);
+} else {
+  app = getApp();
+  auth = getAuth(app);
+}
 // const analytics = getAnalytics(app);
 
-export { db };
+export { firestore, auth, signInWithEmailAndPassword };
